@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff - Courier Alert Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Staff - Courier Alert Management</h1>
+  </header>
+  
+  <main>
+
+    <section id="staff-registration">
+        <h2>Staff Registration</h2>
+        <form id="staff-form">
+          <input type="text" id="staff-name" placeholder="Staff Name" required>
+          <button type="submit">Register Staff</button>
+        </form>
+        <div id="registered-staff-info"></div>
+        <div id="staff-otp-info"></div>
+      </section>
+      
+      <section id="staff-verify">
+        <h2>Parcel Handling</h2>
+        <form id="parcel-staff-form">
+          <input type="text" id="student-otp" placeholder="Enter Student OTP" required>
+          <button type="submit">Verify OTP & Collect Parcel</button>
+        </form>
+        <div id="notification"></div>
+      </section>
+
+  </main>
+
+  <script src="staff.js"></script>
+</body>
+</html>

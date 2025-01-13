@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Courier Alert Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin - Courier Alert Management</h1>
+  </header>
+  
+  <main>
+    <section id="admin-panel">
+      <h2>Admin Panel</h2>
+      <form id="parcel-form">
+        <input type="text" id="receiver-name" placeholder="Receiver Name" required>
+        <input type="text" id="receiver-id" placeholder="Receiver ID" required>
+        <input type="text" id="parcel-number" placeholder="Parcel Number" required>
+        <button type="submit">Register Parcel</button>
+      </form>
+      <div id="otp-info"></div>
+    </section>
+    
+    <section id="user-panel">
+      <h2>User Panel</h2>
+      <form id="otp-validation-form">
+        <input type="text" id="otp-input" placeholder="Enter OTP" required>
+        <button type="submit">Validate OTP</button>
+      </form>
+      <div id="validation-result"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
